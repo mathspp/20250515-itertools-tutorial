@@ -4,7 +4,12 @@ import pytest
 
 
 def count(start=0, step=1):
-    raise NotImplementedError()
+    # result = []
+    value = start
+    while True:
+        yield value
+        value += step
+    # return result
 
 
 def test_count_no_args():
