@@ -4,7 +4,9 @@ import pytest
 
 
 def cycle(iterable):
-    while iterable != 0:
+    if len(iterable) == 0:
+        return
+    while True:
         for value in iterable:
             yield value
 
