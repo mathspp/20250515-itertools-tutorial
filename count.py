@@ -6,8 +6,9 @@ import pytest
 def count(start=0, step=1):
     # result = []
     value = start
-    yield value
-    value += step
+    while True:
+        yield value
+        value += step
     # return result
 
 
