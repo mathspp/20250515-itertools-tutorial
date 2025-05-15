@@ -4,8 +4,9 @@ import pytest
 
 
 def cycle(iterable):
-    for value in iterable:
-        yield value
+    while True:
+        for value in iterable:
+            yield value
 
 
 @pytest.mark.parametrize(
