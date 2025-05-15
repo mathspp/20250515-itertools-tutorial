@@ -4,7 +4,7 @@ import pytest
 
 
 def cycle(iterable):
-    while True:
+    while iterable != 0:
         for value in iterable:
             yield value
 
